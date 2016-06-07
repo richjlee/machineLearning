@@ -9,16 +9,16 @@ from sklearn.cross_validation import train_test_split
 def boost(B, lam):
     """
     Gradient boosting function with one-dimensional spline as base function.
-    Requires pandas data frames as training and test sets (train, test).
-    User is then asked to input column index numbers of data frame to
-    choose dependent and independent variables.
+    Requires Pandas data frames as training and test sets (train, test).
+    User asked to input column index numbers of data frame to choose
+    dependent and independent variables.
 
     B    Number of iterations (int)
     lam  Lambda - tuning parameter (float)
 
     Output: Prints training and test MSE
     """
-    
+
     dep = int(input('Enter number for dependent variable: '))
     ind = int(input('Enter number for independent variable: '))
 

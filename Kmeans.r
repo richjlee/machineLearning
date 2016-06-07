@@ -6,8 +6,8 @@ x = matrix(rnorm(100*2),ncol=2)
 x[1:50,1] = x[1:50,1] + 5 
 x[1:50,2] = x[1:50,2] - 3
 
-K = 2 # Note: program only works for k=2
-#initialize by randomly assigning observations to clusters
+K = 2 # Note: Program only works for k=2
+#Initialize by randomly assigning observations to clusters
 init = sample(1:nrow(x), nrow(x), replace=FALSE)
 cluster1 = x[c(init[1:50]),]
 cluster2 = x[c(init[51:100]),]
